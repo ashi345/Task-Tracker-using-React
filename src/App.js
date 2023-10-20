@@ -43,7 +43,7 @@ const addTask = async (task) => {
   const res = await fetch(`http://localhost:5000/tasks`, {
     method : 'POST',
     headers : {
-      'Content-type' : 'application/json'
+      'Content-Type' : 'application/json'
     },
     body : JSON.stringify(task) 
   })
@@ -79,7 +79,7 @@ const toggleReminder = async (id) => {
   {
     method: 'PUT',
     headers : {
-      'Content-type' : 'application/json'
+      'Content-Type' : 'application/json'
     },
     body : JSON.stringify(updateTask)
   })
