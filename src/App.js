@@ -43,7 +43,7 @@ const addTask = async (task) => {
   const res = await fetch(`http://localhost:5000/tasks`, {
     method : 'POST',
     headers : {
-      'content-type' : 'application/json'
+      'Content-type' : 'application/json'
     },
     body : JSON.stringify(task) 
   })
